@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+     cout << "Welcome to the Login System!" << endl;
     string users[3] = {"admin", "test", "user"};
     string passwords[3] = {"1234", "abcd", "pass"};
 
