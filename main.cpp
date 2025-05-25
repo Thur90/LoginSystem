@@ -3,6 +3,9 @@
 using namespace std;
 
 int main() {
+  
+    cout << "Welcome to the Login System!" << endl;
+
     string users[3] = {"admin", "test", "user"};
     string passwords[3] = {"1234", "abcd", "pass"};
 
@@ -24,7 +27,10 @@ int main() {
         }
 
         if (loggedIn) break;
-        else cout << "Login failed! Attempts left: " << (2 - attempt) << endl;
+        else {
+           
+            cout << "Login failed! Attempt " << (attempt + 1) << " of 3." << endl;
+        }
     }
 
     if (!loggedIn) {
@@ -33,5 +39,3 @@ int main() {
 
     return 0;
 }
-Add login system code
-
